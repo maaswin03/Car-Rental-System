@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainproject.HelloController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="645.0" prefWidth="683.0" style="-fx-background-color: #FFA500;">
+         <children>
+            <Pane layoutX="308.0" layoutY="35.0" prefHeight="583.0" prefWidth="342.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35px;">
+               <children>
+                  <Label layoutX="26.0" layoutY="13.0" prefHeight="34.0" prefWidth="319.0" text="Help us with your information  ">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="72.0" text="Name">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="37.0" layoutY="95.0" prefHeight="35.0" prefWidth="270.0" promptText="Enter Full Name" style="-fx-border-color: #000000;" />
+                  <TextField fx:id="duemailid" layoutX="37.0" layoutY="169.0" prefHeight="35.0" prefWidth="270.0" promptText="Enter Email ID" style="-fx-border-color: #000000;" />
+                  <Label layoutX="39.0" layoutY="147.0" text="Email ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dupo" layoutX="37.0" layoutY="242.0" prefHeight="35.0" prefWidth="270.0" promptText="Enter Phone Number" style="-fx-border-color: #000000;" />
+                  <Label layoutX="37.0" layoutY="222.0" text="Phone Number">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="addressid" layoutX="38.0" layoutY="312.0" prefHeight="123.0" prefWidth="270.0" promptText="Enter Address" style="-fx-border-color: #000000;" />
+                  <Label layoutX="40.0" layoutY="291.0" text="Address">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="38.0" layoutY="536.0" mnemonicParsing="false" onAction="#addnew" prefHeight="35.0" prefWidth="270.0" style="-fx-background-color: #000000;" text="Proceed to Payment" textFill="WHITE" />
+                  <ScrollPane layoutX="36.0" layoutY="450.0" prefHeight="67.0" prefWidth="276.0">
+                     <content>
+                        <AnchorPane prefHeight="482.0" prefWidth="163.0" style="-fx-background-radius: 35;">
+                           <children>
+                              <Text layoutX="11.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terms and Conditions" wrappingWidth="236.57293701171875">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="17.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Rental Eligibility:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="30.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Renter must be 21+ with a valid license." />
+                              <Text layoutX="29.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional drivers must meet eligibility criteria." />
+                              <Text layoutX="20.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Reservation and Confirmation:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="31.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject to vehicle availability." />
+                              <Text layoutX="31.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmation upon payment or valid credit card." />
+                              <Text layoutX="20.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Rental Period:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="33.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24-hour basis from pick-up." />
+                              <Text layoutX="33.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Late returns may incur charges." />
+                              <Text layoutX="21.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Pickup and Return:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="36.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inspect for damages before acceptance." />
+                              <Text layoutX="35.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return in the same condition with a full tank." />
+                              <Text layoutX="22.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Rates and Fees:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="36.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Based on vehicle type and duration." />
+                              <Text layoutX="36.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additional fees for late returns, fuel, and cleaning." />
+                              <Text layoutX="23.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Insurance:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="36.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Renter responsible for coverage." />
+                              <Text layoutX="38.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Optional insurance plans available." />
+                              <Text layoutX="25.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7.Cancellation and Changes:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="38.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fees for cancellations within a time frame." />
+                              <Text layoutX="39.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Changes subject to availability and charges." />
+                              <CheckBox fx:id="checkbox3" layoutX="69.0" layoutY="494.0" mnemonicParsing="false" text="Accept and Continue" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="35.0" layoutY="-3.0" prefHeight="649.0" prefWidth="41.0" style="-fx-background-color: #000000;" />
+            <AnchorPane layoutX="104.0" layoutY="-13.0" prefHeight="659.0" prefWidth="41.0" style="-fx-background-color: #000000;" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

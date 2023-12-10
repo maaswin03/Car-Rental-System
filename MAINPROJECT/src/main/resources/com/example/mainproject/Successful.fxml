@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #FFA500;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mainproject.HelloController">
+   <children>
+      <Pane layoutX="159.0" layoutY="25.0" prefHeight="404.0" prefWidth="379.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25px;">
+         <children>
+            <Button layoutX="203.0" layoutY="341.0" mnemonicParsing="false" onAction="#gottomainpage" prefWidth="150.0" style="-fx-background-radius: 35px;" text="Main Page" />
+            <Button layoutX="27.0" layoutY="341.0" mnemonicParsing="false" onAction="#gotofeedback" prefWidth="150.0" style="-fx-background-radius: 35px;" text="Feedback" />
+            <ImageView fitHeight="157.0" fitWidth="188.0" layoutX="116.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Illustration-of-check-mark-icon-in-blue-color-on-transparent-background-PNG.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="152.0" text="Your Booking has">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="192.0" text="been placed ! ">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="102.0" layoutY="254.0" text="You will recieve a confirmation">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label layoutX="139.0" layoutY="273.0" text="message shortly">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
